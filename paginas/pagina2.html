@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Blog sobre compiladores</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="d-flex flex-column" style="min-height: 100vh;">
+    <!-- Navegation bar -->
+    <header class="mb-4">
+    <nav class="navbar navbar-expand-sm" style="background-color: #490648;">
+        <a class="navbar-brand" href="inicio.html"><img src="../icons/home.png" class="img-fluid" width="30px" alt="Responsive image"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../autor.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>      
+  </header>
+  <!-- Navegation bar -->
+  <div class="container flex-grow-1">
+    <div class="dark">
+        <h2 class="" data-sourcepos="1:1-1:43"><strong>Contexto de un Compilador</strong></h2>
+        <h5>
+            <p data-sourcepos="3:1-3:47"><strong>Importancia del Contexto en la Compilaci&oacute;n:</strong></p>
+        </h5>
+        <p data-sourcepos="5:1-5:28">El contexto de un compilador se refiere al entorno en el que se desarrolla y utiliza el proceso de compilaci&oacute;n. Este contexto abarca diversos aspectos que influyen en el funcionamiento y la calidad del c&oacute;digo generado.</p>
+        <h5>
+            <p data-sourcepos="7:1-7:46"><strong>Componentes del Contexto de un Compilador:</strong></p>
+        </h5>
+        <ol data-sourcepos="9:1-9:105">
+        <li data-sourcepos="9:1-9:105">
+        <p data-sourcepos="9:4-9:225"><strong>Lenguaje de programaci&oacute;n fuente:</strong> El lenguaje de programaci&oacute;n en el que se escribe el c&oacute;digo fuente define las reglas sint&aacute;cticas y sem&aacute;nticas que el compilador debe seguir para traducir el c&oacute;digo a lenguaje de m&aacute;quina.</p>
+        </li>
+        <li data-sourcepos="11:1-11:31">
+        <p data-sourcepos="11:4-11:31"><strong>Arquitectura del ordenador objetivo:</strong> La arquitectura del ordenador en el que se ejecutar&aacute; el programa compilado determina el conjunto de instrucciones de m&aacute;quina disponibles y las caracter&iacute;sticas de hardware que el compilador puede aprovechar para optimizar el c&oacute;digo.</p>
+        </li>
+        <li data-sourcepos="13:1-14:0">
+        <p data-sourcepos="13:4-13:235"><strong>Sistema operativo:</strong> El sistema operativo proporciona la plataforma sobre la que se ejecuta el compilador y el programa compilado. El compilador debe considerar las interfaces y recursos del sistema operativo al generar el c&oacute;digo.</p>
+        </li>
+        <li data-sourcepos="15:1-15:247">
+        <p data-sourcepos="15:4-15:247"><strong>Librer&iacute;as y dependencias:</strong> Las librer&iacute;as y dependencias externas que utiliza el programa compilado tambi&eacute;n forman parte del contexto. El compilador debe garantizar que el c&oacute;digo generado pueda enlazar y utilizar correctamente estas librer&iacute;as.</p>
+        </li>
+        <li data-sourcepos="17:1-18:0">
+        <p data-sourcepos="17:4-17:282"><strong>Herramientas de desarrollo:</strong> Las herramientas de desarrollo, como depuradores y analizadores est&aacute;ticos, tambi&eacute;n pueden influir en el contexto de la compilaci&oacute;n. El compilador puede generar informaci&oacute;n adicional o modificar el c&oacute;digo para facilitar la depuraci&oacute;n y el an&aacute;lisis.</p>
+        </li>
+        </ol>
+        <h5>
+            <p data-sourcepos="19:1-19:24"><strong>Ejemplo de Contexto:</strong></p>
+        </h5>
+        <p data-sourcepos="21:1-21:317">Imaginemos un compilador para un lenguaje de programaci&oacute;n Java que se ejecuta en un sistema operativo Linux. El compilador debe tener en cuenta la sintaxis y sem&aacute;ntica del lenguaje Java, la arquitectura x86 del ordenador, las interfaces del sistema operativo Linux y las librer&iacute;as de Java necesarias para el programa.</p>
+        <h5>
+            <p data-sourcepos="23:1-23:43"><strong>Impacto del Contexto en la Compilaci&oacute;n:</strong></p>
+        </h5>
+        <p data-sourcepos="25:1-25:107">El contexto de un compilador tiene un impacto significativo en el proceso de compilaci&oacute;n de varias maneras:</p>
+        <ul data-sourcepos="27:1-27:200">
+        <li data-sourcepos="27:1-27:200"><strong>Selecci&oacute;n de optimizaciones:</strong> El compilador puede seleccionar diferentes t&eacute;cnicas de optimizaci&oacute;n en funci&oacute;n de la arquitectura del ordenador objetivo y las caracter&iacute;sticas del sistema operativo.</li>
+        <li data-sourcepos="28:1-28:167"><strong>Generaci&oacute;n de c&oacute;digo:</strong> El compilador genera c&oacute;digo de m&aacute;quina espec&iacute;fico para la arquitectura del ordenador objetivo, aprovechando sus caracter&iacute;sticas y recursos.</li>
+        <li data-sourcepos="29:1-29:171"><strong>Enlazado con librer&iacute;as:</strong> El compilador asegura que el c&oacute;digo generado pueda enlazarse correctamente con las librer&iacute;as y dependencias externas que utiliza el programa.</li>
+        <li data-sourcepos="30:1-31:0"><strong>Depuraci&oacute;n y an&aacute;lisis:</strong> El compilador puede generar informaci&oacute;n adicional o modificar el c&oacute;digo para facilitar la depuraci&oacute;n y el an&aacute;lisis del programa compilado.</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<footer class="footer mt-auto">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright.
+    <a class="text-body font-weight-bold">Autor del blog: Juan Galicia</a>
+  </div>
+</footer>
+</body>
+</div>
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

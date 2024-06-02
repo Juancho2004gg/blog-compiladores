@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Blog sobre compiladores</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="d-flex flex-column" style="min-height: 100vh;">
+    <!-- Navegation bar -->
+    <header class="mb-4">
+    <nav class="navbar navbar-expand-sm" style="background-color: #490648;">
+        <a class="navbar-brand" href="inicio.html"><img src="../icons/home.png" class="img-fluid" width="30px" alt="Responsive image"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../autor.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>      
+  </header>
+  <!-- Navegation bar -->
+  <div class="container flex-grow-1">
+    <div class="dark">
+        <h2 class="" data-sourcepos="1:1-1:66"><strong>Proceso de Generaci&oacute;n de C&oacute;digo en un Compilador</strong></h2>
+        <p data-sourcepos="5:1-5:50">La generaci&oacute;n de c&oacute;digo es una etapa crucial en el proceso de compilaci&oacute;n, donde el compilador traduce el c&oacute;digo intermedio generado en la fase de an&aacute;lisis sem&aacute;ntico al lenguaje de m&aacute;quina espec&iacute;fico del ordenador objetivo. Este proceso implica varias etapas y decisiones importantes para optimizar el rendimiento y la eficiencia del c&oacute;digo generado.</p>
+        <h5>
+            <p data-sourcepos="7:1-7:38"><strong>Etapas de la Generaci&oacute;n de C&oacute;digo:</strong></p>
+        </h5>
+        <ol data-sourcepos="9:1-9:5">
+        <li data-sourcepos="9:1-9:5"><strong>Selecci&oacute;n de registros:</strong> En esta etapa, el compilador asigna variables a registros de la CPU para un acceso r&aacute;pido durante la ejecuci&oacute;n del programa. La selecci&oacute;n de registros se realiza considerando factores como la frecuencia de uso de variables y la disponibilidad de registros en la arquitectura del procesador.</li>
+        </ol>
+        <div class="dynamic-element-wrapper">
+        <p data-sourcepos="11:1-11:106">[Imagen de un diagrama que muestra la asignaci&oacute;n de variables a registros durante la generaci&oacute;n de c&oacute;digo]</p>
+        </div>
+        <ol start="2" data-sourcepos="13:1-14:0">
+        <li data-sourcepos="13:1-14:0"><strong>Asignaci&oacute;n de memoria:</strong> El compilador reserva espacio en la memoria para almacenar variables, datos y el c&oacute;digo generado. Esta asignaci&oacute;n de memoria debe considerar el tama&ntilde;o de los datos, la organizaci&oacute;n de la memoria y la eficiencia de acceso a la misma.</li>
+        </ol>
+        <div class="dynamic-element-wrapper">
+        <p data-sourcepos="15:1-15:123">[Imagen de un diagrama que muestra la asignaci&oacute;n de memoria para variables, datos y c&oacute;digo durante la generaci&oacute;n de c&oacute;digo]</p>
+        </div>
+        <ol start="3" data-sourcepos="17:1-18:0">
+        <li data-sourcepos="17:1-18:0"><strong>Emisi&oacute;n de instrucciones:</strong> En esta etapa, el compilador genera las instrucciones de m&aacute;quina correspondientes a las operaciones del c&oacute;digo intermedio. Se seleccionan las instrucciones espec&iacute;ficas de la arquitectura del ordenador objetivo, considerando la eficiencia y el rendimiento.</li>
+        </ol>
+        <div class="dynamic-element-wrapper">
+        <p data-sourcepos="19:1-19:108">[Imagen de un diagrama que muestra la generaci&oacute;n de instrucciones de m&aacute;quina a partir del c&oacute;digo intermedio]</p>
+        </div>
+        <ol start="4" data-sourcepos="21:1-22:0">
+        <li data-sourcepos="21:1-22:0"><strong>Optimizaci&oacute;n de c&oacute;digo:</strong> La optimizaci&oacute;n de c&oacute;digo es una fase crucial que busca mejorar el rendimiento del c&oacute;digo generado. Se aplican diversas t&eacute;cnicas, como la eliminaci&oacute;n de c&oacute;digo redundante, la simplificaci&oacute;n de expresiones y el reordenamiento de instrucciones, para generar un c&oacute;digo m&aacute;s eficiente.</li>
+        </ol>
+        <div class="dynamic-element-wrapper">
+        <p data-sourcepos="23:1-23:87">[Imagen de un diagrama que muestra la aplicaci&oacute;n de t&eacute;cnicas de optimizaci&oacute;n de c&oacute;digo]</p>
+        </div>
+        <h5>
+            <p data-sourcepos="25:1-25:36"><strong>Ejemplo de Generaci&oacute;n de C&oacute;digo:</strong></p>
+        </h5>
+        <p data-sourcepos="27:1-27:66">Consideremos la siguiente instrucci&oacute;n en lenguaje C: <code class="">x = y + z;</code>. Durante la generaci&oacute;n de c&oacute;digo, el compilador podr&iacute;a realizar las siguientes acciones:</p>
+        <ol data-sourcepos="29:1-33:0">
+        <li data-sourcepos="29:1-29:102"><strong>Selecci&oacute;n de registros:</strong> Asignar las variables <code>x</code>, <code>y</code> y <code>z</code> a registros espec&iacute;ficos de la CPU.</li>
+        <li data-sourcepos="30:1-30:110"><strong>Asignaci&oacute;n de memoria:</strong> Reservar espacio en la memoria para almacenar el valor final de la variable <code>x</code>.</li>
+        <li data-sourcepos="31:1-31:289"><strong>Emisi&oacute;n de instrucciones:</strong> Generar las instrucciones de m&aacute;quina para cargar los valores de <code>y</code> y <code>z</code> en los registros asignados, realizar la operaci&oacute;n de suma, almacenar el resultado en el registro asignado a <code>x</code> y actualizar la tabla de s&iacute;mbolos para reflejar el nuevo valor de <code>x</code>.</li>
+        <li data-sourcepos="32:1-33:0"><strong>Optimizaci&oacute;n de c&oacute;digo:</strong> Aplicar t&eacute;cnicas de optimizaci&oacute;n, como la eliminaci&oacute;n de c&oacute;digo redundante o la simplificaci&oacute;n de la expresi&oacute;n de suma, para mejorar la eficiencia del c&oacute;digo generado.</li>
+        </ol>
+       <h5>
+        <p data-sourcepos="34:1-34:15"><strong>Conclusi&oacute;n:</strong></p>
+       </h5>
+        <p data-sourcepos="36:1-36:344">La generaci&oacute;n de c&oacute;digo es un proceso complejo y crucial en la compilaci&oacute;n, donde se traduce el c&oacute;digo intermedio en lenguaje de m&aacute;quina y se aplican t&eacute;cnicas de optimizaci&oacute;n para mejorar el rendimiento. La comprensi&oacute;n de este proceso es fundamental para desarrollar compiladores eficientes y adaptables a diferentes arquitecturas de ordenador.</p>
+
+    </div>
+</div>
+
+
+
+<footer class="footer mt-auto">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright.
+    <a class="text-body font-weight-bold">Autor del blog: Juan Galicia</a>
+  </div>
+</footer>
+</body>
+</div>
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

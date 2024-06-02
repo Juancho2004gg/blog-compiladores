@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Blog sobre compiladores</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="d-flex flex-column" style="min-height: 100vh;">
+    <!-- Navegation bar -->
+    <header class="mb-4">
+    <nav class="navbar navbar-expand-sm" style="background-color: #490648;">
+        <a class="navbar-brand" href="inicio.html"><img src="../icons/home.png" class="img-fluid" width="30px" alt="Responsive image"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../autor.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>      
+  </header>
+  <!-- Navegation bar -->
+  <div class="container flex-grow-1">
+    <div class="dark">
+      <h2 class="" data-sourcepos="1:1-1:70"><strong>Fases de la Optimizaci&oacute;n Dependiente en Compiladores</strong></h2>
+      <p data-sourcepos="5:1-5:52">La optimizaci&oacute;n dependiente es un proceso crucial en la compilaci&oacute;n que busca mejorar el rendimiento del c&oacute;digo generado al explotar las caracter&iacute;sticas espec&iacute;ficas del ordenador objetivo en el que se ejecutar&aacute; el programa. Este proceso se realiza en varias fases que abarcan desde el an&aacute;lisis de la arquitectura hasta la evaluaci&oacute;n del c&oacute;digo optimizado.</p>
+      
+      <h5>
+        <p data-sourcepos="7:1-7:41"><strong>Fases de la Optimizaci&oacute;n Dependiente:</strong></p>
+      </h5>
+      <ol data-sourcepos="9:1-9:199">
+      <li data-sourcepos="9:1-9:199">
+      <p class="" data-sourcepos="9:4-9:335"><strong class="">An&aacute;lisis de arquitectura:</strong> La primera fase consiste en analizar la arquitectura del ordenador objetivo, incluyendo su conjunto de instrucciones, jerarqu&iacute;a de memoria, caracter&iacute;sticas de cach&eacute; y recursos de procesamiento. Esta informaci&oacute;n es fundamental para identificar las oportunidades de optimizaci&oacute;n que se pueden aprovechar.</p>
+      </li>
+      <li data-sourcepos="11:1-12:0">
+      <p data-sourcepos="11:4-11:323"><strong>Perfilado:</strong> En esta fase, se ejecuta el programa y se recopilan datos sobre su comportamiento, como patrones de acceso a memoria, uso de la CPU y distribuci&oacute;n de instrucciones. Estos datos permiten comprender c&oacute;mo se ejecuta el programa en la pr&aacute;ctica y enfocar las t&eacute;cnicas de optimizaci&oacute;n en las &aacute;reas m&aacute;s cr&iacute;ticas.</p>
+      </li>
+      <li data-sourcepos="13:1-13:227">
+      <p data-sourcepos="13:4-13:227"><strong>Selecci&oacute;n de optimizaciones:</strong> Bas&aacute;ndose en la informaci&oacute;n obtenida en las fases anteriores, se seleccionan las t&eacute;cnicas de optimizaci&oacute;n dependiente m&aacute;s adecuadas para el programa y la arquitectura objetivo. Estas t&eacute;cnicas pueden incluir:</p>
+      <ul data-sourcepos="15:5-19:0">
+      <li data-sourcepos="15:5-15:135"><strong>Programaci&oacute;n vectorial:</strong> Utilizar instrucciones vectoriales para realizar operaciones en m&uacute;ltiples datos de manera simult&aacute;nea.</li>
+      <li data-sourcepos="16:5-16:187"><strong>Reordenamiento de instrucciones:</strong> Reordenar las instrucciones del programa para mejorar la utilizaci&oacute;n de las unidades funcionales del procesador y reducir los tiempos de espera.</li>
+      <li data-sourcepos="17:5-17:186"><strong>Inserci&oacute;n de c&oacute;digo de predicci&oacute;n:</strong> Insertar c&oacute;digo de predicci&oacute;n para predecir el resultado de operaciones condicionales, mejorando el rendimiento de la ejecuci&oacute;n especulativa.</li>
+      <li data-sourcepos="18:5-19:0"><strong>Optimizaci&oacute;n de cach&eacute;:</strong> Optimizar el acceso a la memoria cach&eacute; para reducir el tiempo de espera y mejorar el rendimiento de las operaciones de memoria.</li>
+      </ul>
+      </li>
+      <li data-sourcepos="20:1-21:0">
+      <p data-sourcepos="20:4-20:292"><strong>Aplicaci&oacute;n de optimizaciones:</strong> En esta fase, se aplican las t&eacute;cnicas de optimizaci&oacute;n seleccionadas al c&oacute;digo intermedio generado por el compilador. Se realizan las modificaciones necesarias en el c&oacute;digo para aprovechar las caracter&iacute;sticas del hardware objetivo y mejorar el rendimiento.</p>
+      </li>
+      <li data-sourcepos="22:1-23:0">
+      <p data-sourcepos="22:4-22:238"><strong>Evaluaci&oacute;n:</strong> La fase final consiste en evaluar el c&oacute;digo optimizado para verificar que se ha mejorado el rendimiento del programa. Se realizan pruebas de rendimiento y se comparan los resultados con el c&oacute;digo original sin optimizar.</p>
+      </li>
+      </ol>
+      <h5>
+        <p data-sourcepos="24:1-24:38"><strong>Ejemplo de Fases de Optimizaci&oacute;n Dependiente:</strong></p>
+      </h5>
+      <p data-sourcepos="26:1-26:829">Consideremos un programa que realiza c&aacute;lculos matem&aacute;ticos intensivos en un ordenador con un procesador multin&uacute;cleo. Durante la fase de an&aacute;lisis de arquitectura, se identifica que el procesador dispone de unidades vectoriales y cach&eacute; de alto rendimiento. En la fase de perfilado, se observa que el programa realiza un gran n&uacute;mero de operaciones de suma y multiplicaci&oacute;n. En la fase de selecci&oacute;n de optimizaciones, se decide aplicar la t&eacute;cnica de programaci&oacute;n vectorial para aprovechar las unidades vectoriales del procesador. En la fase de aplicaci&oacute;n de optimizaciones, se modifica el c&oacute;digo para realizar las operaciones de suma y multiplicaci&oacute;n de manera vectorial. Finalmente, en la fase de evaluaci&oacute;n, se comprueba que el c&oacute;digo optimizado ejecuta los c&aacute;lculos matem&aacute;ticos significativamente m&aacute;s r&aacute;pido que el c&oacute;digo original.</p>
+      <p data-sourcepos="30:1-30:462">La optimizaci&oacute;n dependiente es un proceso complejo pero crucial para generar c&oacute;digo altamente eficiente que se ejecuta de manera &oacute;ptima en un ordenador objetivo espec&iacute;fico. Las diferentes fases de la optimizaci&oacute;n dependiente permiten analizar la arquitectura, perfilar el comportamiento del programa, seleccionar las t&eacute;cnicas adecuadas y evaluar los resultados obtenidos. Al aplicar la optimizaci&oacute;n dependiente de manera efectiva, los compiladores pueden generar c&oacute;digo que aprovecha al m&aacute;ximo los recursos del hardware y mejora significativamente el rendimiento de las aplicaciones.</p>
+        
+    </div>
+</div>
+
+
+
+<footer class="footer mt-auto">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright.
+    <a class="text-body font-weight-bold">Autor del blog: Juan Galicia</a>
+  </div>
+</footer>
+</body>
+</div>
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Blog sobre compiladores</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="d-flex flex-column" style="min-height: 100vh;">
+    <!-- Navegation bar -->
+    <header class="mb-4">
+    <nav class="navbar navbar-expand-sm" style="background-color: #490648;">
+        <a class="navbar-brand" href="inicio.html"><img src="../icons/home.png" class="img-fluid" width="30px" alt="Responsive image"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="../inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../autor.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>      
+  </header>
+  <!-- Navegation bar -->
+  <div class="container flex-grow-1">
+    <div class="dark">
+        <h2 class="" data-sourcepos="1:1-1:58"><strong>Optimizaci&oacute;n Dependiente en Compiladores</strong></h2>
+        <h5><p data-sourcepos="3:1-3:17"><strong>Introducci&oacute;n:</strong></p></h5>
+        <p data-sourcepos="5:1-5:64">La optimizaci&oacute;n dependiente se refiere a un conjunto de t&eacute;cnicas de optimizaci&oacute;n de c&oacute;digo que se basan en las caracter&iacute;sticas espec&iacute;ficas del ordenador objetivo en el que se ejecutar&aacute; el programa. Estas t&eacute;cnicas aprovechan las caracter&iacute;sticas de la arquitectura del procesador, la memoria y otros recursos del hardware para mejorar el rendimiento del c&oacute;digo generado.</p>
+        <h5>
+            <p data-sourcepos="7:1-7:45"><strong>Objetivos de la Optimizaci&oacute;n Dependiente:</strong></p>
+        </h5>
+        <p data-sourcepos="9:1-9:31">Los principales objetivos de la optimizaci&oacute;n dependiente son:</p>
+        <ul data-sourcepos="11:1-11:124">
+        <li data-sourcepos="11:1-11:124"><strong>Explotar la jerarqu&iacute;a de memoria:</strong> Aprovechar la jerarqu&iacute;a de memoria del ordenador, como la memoria cach&eacute; y la memoria principal, para optimizar el acceso a datos y reducir el tiempo de espera.</li>
+        <li data-sourcepos="12:1-12:203"><strong>Selecci&oacute;n de instrucciones:</strong> Seleccionar las instrucciones de m&aacute;quina m&aacute;s eficientes para las operaciones del programa, considerando las caracter&iacute;sticas del procesador y las t&eacute;cnicas de paralelismo.</li>
+        <li data-sourcepos="13:1-13:143"><strong>Alineaci&oacute;n de datos:</strong> Alinear datos en la memoria para optimizar el acceso a ellos y mejorar el rendimiento de las operaciones de memoria.</li>
+        <li data-sourcepos="14:1-15:0"><strong>Reducci&oacute;n de dependencias:</strong> Reducir las dependencias entre instrucciones para permitir la ejecuci&oacute;n paralela y mejorar la eficiencia del procesador.</li>
+        </ul>
+        <h5>
+            <p data-sourcepos="16:1-16:41"><strong>T&eacute;cnicas de Optimizaci&oacute;n Dependiente:</strong></p>
+        </h5>
+        <p data-sourcepos="18:1-18:63">Algunas de las t&eacute;cnicas de optimizaci&oacute;n dependiente m&aacute;s comunes incluyen:</p>
+        <ul data-sourcepos="20:1-24:0">
+        <li data-sourcepos="20:1-20:180"><strong>Programaci&oacute;n vectorial:</strong> Utilizar instrucciones vectoriales para realizar operaciones en m&uacute;ltiples datos simult&aacute;neamente, aprovechando las unidades vectoriales del procesador.</li>
+        <li data-sourcepos="21:1-21:183"><strong>Reordenamiento de instrucciones:</strong> Reordenar las instrucciones del programa para mejorar la utilizaci&oacute;n de las unidades funcionales del procesador y reducir los tiempos de espera.</li>
+        <li data-sourcepos="22:1-22:182"><strong>Inserci&oacute;n de c&oacute;digo de predicci&oacute;n:</strong> Insertar c&oacute;digo de predicci&oacute;n para predecir el resultado de operaciones condicionales, mejorando el rendimiento de la ejecuci&oacute;n especulativa.</li>
+        <li data-sourcepos="23:1-24:0"><strong>Optimizaci&oacute;n de cach&eacute;:</strong> Optimizar el acceso a la memoria cach&eacute; para reducir el tiempo de espera y mejorar el rendimiento de las operaciones de memoria.</li>
+        </ul>
+        
+        <h5>
+            <p data-sourcepos="25:1-25:40"><strong>Ejemplo de Optimizaci&oacute;n Dependiente:</strong></p>
+        </h5>
+        <p data-sourcepos="27:1-27:35">Consideremos el siguiente c&oacute;digo C:</p>
+        <div class="code-block ng-star-inserted">
+        <div class="code-block-internal-container">
+        <pre><code class="code-container" data-test-id="code-content" data-sourcepos="29:1-33:1"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+          a[i] = b[i] + c[i];
+        }
+        </code></pre>
+        </div>
+        <div class="code-block-decoration footer gmat-overline hide-from-message-actions ng-star-inserted">&nbsp;</div>
+        </div>
+        <p data-sourcepos="35:1-35:62">La optimizaci&oacute;n dependiente podr&iacute;a transformar este c&oacute;digo en:</p>
+        <div class="code-block ng-star-inserted">
+        <div class="code-block-internal-container">
+        <pre><code class="code-container" data-test-id="code-content" data-sourcepos="37:1-48:1"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i += <span class="hljs-number">4</span>) {
+          <span class="hljs-keyword">float</span> temp1 = b[i] + c[i];
+          <span class="hljs-keyword">float</span> temp2 = b[i + <span class="hljs-number">1</span>] + c[i + <span class="hljs-number">1</span>];
+          <span class="hljs-keyword">float</span> temp3 = b[i + <span class="hljs-number">2</span>] + c[i + <span class="hljs-number">2</span>];
+          <span class="hljs-keyword">float</span> temp4 = b[i + <span class="hljs-number">3</span>] + c[i + <span class="hljs-number">3</span>];
+          a[i] = temp1;
+          a[i + <span class="hljs-number">1</span>] = temp2;
+          a[i + <span class="hljs-number">2</span>] = temp3;
+          a[i + <span class="hljs-number">3</span>] = temp4;
+        }
+        </code></pre>
+        </div>
+        <div class="code-block-decoration footer gmat-overline hide-from-message-actions ng-star-inserted">&nbsp;</div>
+        </div>
+        <p data-sourcepos="50:1-50:206">En este ejemplo, se ha utilizado la t&eacute;cnica de programaci&oacute;n vectorial para realizar la suma de cuatro elementos de los arrays <code class="">b</code> y <code class="">c</code> simult&aacute;neamente, aprovechando las unidades vectoriales del procesador.</p>
+        <h5>
+            <p data-sourcepos="52:1-52:44"><strong>Ventajas de la Optimizaci&oacute;n Dependiente:</strong></p>
+        </h5>
+        <p data-sourcepos="54:1-54:51">La optimizaci&oacute;n dependiente ofrece varias ventajas:</p>
+        <ul data-sourcepos="56:1-57:60">
+        <li data-sourcepos="56:1-56:194"><strong>Mayor rendimiento:</strong> Las t&eacute;cnicas de optimizaci&oacute;n dependiente pueden mejorar significativamente el rendimiento del c&oacute;digo generado, aprovechando las caracter&iacute;sticas espec&iacute;ficas del hardware.</li>
+        <li data-sourcepos="57:1-57:60"><strong>Reducci&oacute;n del consumo de energ&iacute;a:</strong> Un c&oacute;digo optimizado dependientemente puede consumir menos energ&iacute;a al reducir el tiempo de ejecuci&oacute;n y mejorar la eficiencia del procesador.</li>
+        <li data-sourcepos="58:1-59:0"><strong>Ejecuci&oacute;n m&aacute;s predecible:</strong> La optimizaci&oacute;n dependiente puede mejorar la predictibilidad del tiempo de ejecuci&oacute;n del programa, lo que es importante para aplicaciones en tiempo real.</li>
+        </ul>
+        <h5>
+            <p data-sourcepos="60:1-60:47"><strong>Desventajas de la Optimizaci&oacute;n Dependiente:</strong></p>
+        </h5>
+        <p data-sourcepos="62:1-62:65">La optimizaci&oacute;n dependiente tambi&eacute;n presenta algunas desventajas:</p>
+        <ul data-sourcepos="64:1-67:0">
+        <li data-sourcepos="64:1-64:174"><strong>Complejidad:</strong> Las t&eacute;cnicas de optimizaci&oacute;n dependiente pueden ser complejas de implementar y requerir un conocimiento profundo de la arquitectura del ordenador objetivo.</li>
+        <li data-sourcepos="65:1-65:161"><strong>Dependencia de la plataforma:</strong> Un c&oacute;digo optimizado dependientemente puede ser menos port&aacute;til y no ejecutarse de manera eficiente en diferentes plataformas.</li>
+        <li data-sourcepos="66:1-67:0"><strong>Aumento del tiempo de compilaci&oacute;n:</strong> La aplicaci&oacute;n de t&eacute;cnicas de optimizaci&oacute;n dependiente puede aumentar significativamente el tiempo de compilaci&oacute;n del programa.</li>
+        </ul>
+        <p data-sourcepos="68:1-68:15">La optimizaci&oacute;n dependiente es una parte crucial del proceso de compilaci&oacute;n para generar c&oacute;digo altamente eficiente que se ejecuta de manera &oacute;ptima en un ordenador objetivo espec&iacute;fico. Las t&eacute;cnicas de optimizaci&oacute;n dependiente pueden mejorar significativamente el rendimiento, reducir el consumo de energ&iacute;a y mejorar la predictibilidad del tiempo de ejecuci&oacute;n, pero requieren un conocimiento profundo de la arquitectura del hardware y pueden aumentar el tiempo de compilaci&oacute;n.</p>
+        
+    </div>
+</div>
+
+
+
+<footer class="footer mt-auto">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright.
+    <a class="text-body font-weight-bold">Autor del blog: Juan Galicia</a>
+  </div>
+</footer>
+</body>
+</div>
+<!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
